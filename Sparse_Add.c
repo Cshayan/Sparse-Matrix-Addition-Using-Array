@@ -6,7 +6,6 @@ void readsparse(int b[MAX][3]);
 void addsparse(int b1[MAX][3],int b2[MAX][3],int b3[MAX][3]);
 int main()
 {
-
 int b1[MAX][3],b2[MAX][3],b3[MAX][3];
 
 readsparse(b1);
@@ -43,7 +42,6 @@ int t1,t2,i,j,k;
 
 if(b1[0][0]!=b2[0][0]||b1[0][1]!=b2[0][1])
     {
-
           printf("\nYou have entered invalid matrix!!Size must be equal");
           exit(0);
     }
@@ -71,7 +69,6 @@ while(i<=t1&&j<=t2)
 
    else if(b2[j][0]<b1[i][0])
   {
-
       b3[k][0]=b2[j][0];
       b3[k][1]=b2[j][1];
       b3[k][2]=b2[j][2];
@@ -83,7 +80,6 @@ while(i<=t1&&j<=t2)
 
    else if(b1[i][1]<b2[j][1])
   {
-
       b3[k][0]=b1[i][0];
       b3[k][1]=b1[i][1];
       b3[k][2]=b1[i][2];
@@ -94,7 +90,6 @@ while(i<=t1&&j<=t2)
 
    else if(b2[j][1]<b1[i][1])
    {
-
         b3[k][0]=b2[j][0];
         b3[k][1]=b2[j][1];
         b3[k][2]=b2[j][2];
@@ -105,7 +100,6 @@ while(i<=t1&&j<=t2)
 
    else
    {
-
      b3[k][0]=b1[i][0];
      b3[k][1]=b1[i][1];
      b3[k][2]=b1[i][2]+b2[j][2];
@@ -118,7 +112,6 @@ while(i<=t1&&j<=t2)
 
       while(i<=t1)
     {
-
         b3[k][0]=b1[i][0];
         b3[k][1]=b1[i][1];
         b3[k][2]=b1[i][2];
@@ -129,7 +122,6 @@ while(i<=t1&&j<=t2)
 
       while(j<=t2)
     {
-
         b3[k][0]=b2[j][0];
         b3[k][1]=b1[j][1];
         b3[k][2]=b1[j][2];
